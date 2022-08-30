@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    max-width: 900px;
+    padding: 35px;
+    gap: 17px;
+    grid-template-areas: 
+    "video-principal propaganda "
+    "video-principal video-aside "
+    ;
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+}
+    
+.video-principal{
+    grid-area: video-principal;
+}
+
+.video-principal .area-video{
+    width: 543px;
+    height: 217px;
+    background-color: #ccc;
+    margin-bottom: 12px;
+}
+
+.video-principal .descricao .views-principal{
+    margin: 8px 0;
+}
+
+.propaganda{
+    background-color: #ccc;
+    grid-area: propaganda;
+}
+
+.videos-aside{
+    grid-area: video-aside;
+    border-color: green;
+    
+}   
+
+.videos-aside .video-aside{
+    display: flex;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.videos-aside .video-aside .thumb{
+    width: 100px;
+    height: 70px;
+    background-color: #ccc;
+}
+
+.videos-aside .video-aside .info-aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 4px;
+}
+
+.videos-aside .video-aside .info-aside .titulo-aside{
+    font-size: 14px;
+}
+

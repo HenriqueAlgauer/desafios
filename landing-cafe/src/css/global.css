@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Courier Prime', monospace;
+}
+
+a{
+    color: #111;
+}
+/* Header & Footer*/
+
+.cabecalho, .rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu-lista{
+    display: flex;
+}
+
+.item{
+    padding: 10px 20px; 
+    font-size: 19px;   
+}
+
+/* Painel */
+
+.painel{
+    width: 100%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/painel.jpg');
+}
+.painel .texto-painel{
+    font-size: 50px;
+    color: white;
+}
+
+/* Quem Somos & Onde Estamos */
+
+.quem-somos, .onde-estamos{
+    width: 45%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagem-planta-cafe{
+    height: 170px;
+    width: 170px;
+}
+
+#titulo-quem-somos, #titulo-onde-estamos{
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+/* Ladrilhos */
+
+.ladrilhos{
+    display: grid;
+    grid-template-areas: 
+    "a1 a1 a2 a3"
+    "a1 a1 a4 a4"
+    ;
+    
+}
+.img{
+    width: 100%;
+}
+
+.img1{
+    grid-area: a1;
+
+}
+.img2{
+    grid-area: a2;
+}
+.img3{
+    grid-area: a3;
+}
+.img4{
+    grid-area: a4;
+    position: relative;
+    top: -5px;
+}
+
+
+/* Contato */
+
+.container-contato{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/fundo-contato.jpg");
+    color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;  
+}
+.contato{
+    transform: translateX(70%);
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#titulo-contato{
+    font-size: 40px;
+    font-weight: 100;
+}
+.texto-contato{
+    font-size: 20px;
+}
+
+/* Footer */
+
+.rodape{
+    background-image: url('../images/fundo-rodape.jpg');
+    color: #fff;
+}
+
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#img-logo-footer{
+    width: 85px;
+    height: 85px;
+    margin-bottom: 10px;
+}
+.rodape .menu .item-rodape{
+    color: #fff;
+}
+
+/* .redes-sociais img{
+    width: 20px;
+    position: relative;
+    top: 30px;
+    left: 380px;
+} */
